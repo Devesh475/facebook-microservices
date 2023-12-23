@@ -1,0 +1,17 @@
+const TASK_STATUS_ENUM = {
+    INITIALIZED: 'INITIALIZED',
+    IN_PROGRESS: 'IN_PROGRESS',
+    COMPLETED: 'COMPLETED',
+    ERROR: 'ERROR',
+    QUEUED: 'QUEUED'
+}
+
+const TASK_TYPES = {
+    PROCESS: 'PROCESS',
+    LISTENER: 'LISTENER'
+}
+
+module.exoprts = {
+    TASK_STATUS_ENUM,
+    TASK_TYPES
+}

@@ -1,0 +1,25 @@
+version: '3'
+
+services:
+  sonarqube:
+    container_name: sonarqube-facebook
+    image: sonarqube:latest
+    ports: 
+      - "9000:9000"
+      - "9092:9092"
+
+  mongodb:
+    image: mongo:latest
+    ports: 
+      - 27017:27017
+    restart: on-failure
+    environment:
+      - MONGO_INITDB_ROOT_USERNAME=admin
+      - MONGO_INITDB_ROOT_PASSWORD=admin
+  
+  rabbitmq:
+    image: rabbitmq:latest
+    ports:
+      - 5672:5672
+      - 15672:15672
+

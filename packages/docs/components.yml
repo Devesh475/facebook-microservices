@@ -1,0 +1,9 @@
+components:
+  schemas:
+    RequestBody:
+      type: object
+      properties:
+        user: 
+          type: string
+      example: 
+        user: "devesh"
